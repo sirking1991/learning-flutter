@@ -71,9 +71,6 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter times',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            Row(
-              children: [],
-            ),
           ],
         ),
       ),
