@@ -46,9 +46,21 @@ class MyApp extends StatelessWidget {
     Widget buttonSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        _buildButtonColumn(color, Icons.call, 'CALL'),
-        _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
-        _buildButtonColumn(color, Icons.share, 'SHARE'),
+        GestureDetector(
+          // ignore: avoid_print
+          onTap: () => print('Call was tapped'),
+          child: _buildButtonColumn(color, Icons.call, 'CALL'),
+        ),
+        GestureDetector(
+          // ignore: avoid_print
+          onTap: () => print('Route was tapped'),
+          child: _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+        ),
+        GestureDetector(
+          // ignore: avoid_print
+          onTap: () => print('Share was tapped'),
+          child: _buildButtonColumn(color, Icons.share, 'SHARE'),
+        )
       ],
     );
 
